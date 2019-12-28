@@ -4,7 +4,7 @@
 ### 建立變數條件 
 if (isset($argv[1])) { $containerName=trim($argv[1]); } else { $containerName="mytorch"; }
 if (isset($argv[2])) { $containerGpuNum=trim($argv[2]); } else { $containerGpuNum="1"; }
-if (isset($argv[3])) { $containerSol=trim($argv[3]); } else { $containerGpuNum="PyTorch"; }
+if (isset($argv[3])) { $containerSol=trim($argv[3]); } else { $containerSol="PyTorch"; }
 if (isset($argv[4])) { $containerImg=trim($argv[4]); } else { $containerImg="pytorch-19.11-py3:latest"; }
 
 ### 導入 Function, containerFunc.php

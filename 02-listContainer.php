@@ -1,4 +1,5 @@
 <?php
+### Example: php 02-listContainer.php  or  php 02-listContainer.php $containerID
 ### 導入 Function, containerFunc.php
 $dirBin=dirname(__FILE__);
 include($dirBin."/00-containerFunc.php");

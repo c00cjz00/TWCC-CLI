@@ -1,9 +1,11 @@
 <?php
+### Example: php 01-createContainer.php mytorch 1  PyTorch 'pytorch-19.11-py3:latest'
+
 ### 建立變數條件 
-$containerName="mytorch";
-$containerGpuNum=1;
-$containerSol="PyTorch";
-$containerImg="pytorch-19.11-py3:latest";
+if (isset($argv[1])) { $containerName=trim($argv[1]); } else { $containerName="mytorch"; }
+if (isset($argv[2])) { $containerGpuNum=trim($argv[2]); } else { $containerGpuNum="1"; }
+if (isset($argv[3])) { $containerSol=trim($argv[3]); } else { $containerGpuNum="PyTorch"; }
+if (isset($argv[4])) { $containerImg=trim($argv[4]); } else { $containerImg="pytorch-19.11-py3:latest"; }
 
 ### 導入 Function, containerFunc.php
 $dirBin=dirname(__FILE__);
